@@ -56,10 +56,10 @@ html {
 .navbar-item {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
+  /* text-transform: ; */
   letter-spacing: 1px;
   font-size: 1rem;
-  box-shadow: ;
+  /* box-shadow: ; */
 }
 
 .navbar-item.is-active {
@@ -70,14 +70,48 @@ html {
   font-color: #996e6d;
 }
 
+/* buat jam */
+#hitungmundur li {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #bc8887; /* Adjust the color as needed */
+  margin: 5px;
+  border-radius: 5px; /* Optional: adds rounded corners */
+  background-color: transparent; /* Optional: adds a background color */
+  text-align: center;
+  width: 60px; /* Adjust the width as needed */
+}
+
+#hitungmundur .separator {
+  border: none;
+  padding: 0;
+  margin: 0 5px;
+  background-color: transparent;
+}
+
+#hitungmundur span {
+  font-size: 2em;
+  display: block;
+}
+
+#hitungmundur p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* akhiran jam */
+
+/* Undangan */
+
 .hero {
+  /* background-image: url(page1.jpeg); */
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(247 146 143 / 32%), #2e3f5b00),
-    rgb(61 76 90) url(../image/page1.png) no-repeat;
+  background: linear-gradient(rgb(247 146 143 / 32%), #c9d9e800),
+    rgb(216, 228, 240) url(../image/animasi.png) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
-  box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  color: black; /*buat jam
+  /* box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); */
   font-family: "Raleway", sans-serif;
 }
 
@@ -87,7 +121,7 @@ html {
     rgb(61 76 90) url(../image/2.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
+  color: black;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
 }
@@ -99,17 +133,79 @@ html {
   font-size: 5rem;
   padding-bottom: 5px;
   color: whitesmoke;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* .h4 {
+  margin-top: 50px; /* Atur margin atas */
+margin-bottom: 500px; /* Atur margin bawah */
+/* } */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Mengatur semua elemen ke tengah */
+  margin-top: 700px; /* Atur jarak dari atas halaman */
+}
+
+/* Buat jamnya */
+#hitungmundur {
+  color: black; /* Mengatur warna teks hitam untuk semua elemen di dalam #hitungmundur */
+}
+
+#hitungmundur .days,
+#hitungmundur .hours,
+#hitungmundur .minutes,
+#hitungmundur .seconds {
+  color: black; /* Memastikan warna teks untuk angka hitam */
+}
+
+#hitungmundur .days_text,
+#hitungmundur .hours_text,
+#hitungmundur .minutes_text,
+#hitungmundur .seconds_text {
+  color: black; /* Memastikan warna teks untuk label hitam */
+}
+
+#hitungmundur .separator {
+  color: black; /* Memastikan warna teks untuk separator hitam */
+}
+
+/* Buttonya buat liat undangan */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0; /* Atur border-radius menjadi 0 untuk tampilan kotak */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .hero .subtitle {
   padding: 35px;
-  color: whitesmoke;
+  color: black;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .hero .tempatwaktu {
-  padding-top: 35px;
+  padding-top: px;
   font-size: 1.3rem;
+  color: #6eacda;
 }
 
 .hero .hero-foot {
@@ -132,7 +228,7 @@ html {
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
+  /* text-transform: ; */
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -156,6 +252,8 @@ html {
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid #c28285;
 }
+
+/* buat menuhin layar */
 
 .space40px {
   height: 40px;
@@ -330,7 +428,7 @@ html {
 .main-content .section-title {
   font-size: 70px;
   margin-left: 20px;
-  line-height: ;
+  /* line-height: ; */
   font-weight: bold;
   color: rgb(95 91 92);
   font-family: "Rouge Script";
@@ -338,38 +436,22 @@ html {
 .lks {
   font-size: 70px;
   margin-left: 20px;
-  line-height: ;
+  /* line-height: ; */
   font-weight: bold;
   color: rgb(95 91 92);
   font-family: "Rouge Script";
 }
 .asdc {
   font-size: 100px;
-  line-height: ;
+  /* line-height: ; */
   font-weight: bold;
   color: rgb(119, 85, 98);
   font-family: "Rouge Script";
 }
-.prokes {
-  font-size: 50px;
-  margin-left: 20px;
-  line-height: ;
-  font-weight: bold;
-  color: rgb(221, 209, 43);
-  font-family: "Californian FB";
-}
 
-.prokes2 {
-  font-size: 50px;
-  margin-left: 20px;
-  line-height: ;
-  font-weight: bold;
-  color: rgb(221, 209, 43);
-  font-family: "Californian FB";
-}
 .asdc2 {
   font-size: 20px;
-  line-height: ;
+  /* line-height: ; */
   font-weight: bold;
   color: rgb(119, 85, 98);
   font-family: "Raleway";
@@ -412,7 +494,7 @@ html {
 .tempat {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
-  font-size: ;
+  /* font-size: ; */
   margin-bottom: 50px;
 }
 
@@ -743,78 +825,6 @@ body.preloader-site {
   border-radius: 10px;
 }
 
-.foto1 {
-  background-image: url("../image/1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto2 {
-  background-image: url("../image/2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto3 {
-  background-image: url("../image/3.jpeg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto4 {
-  background-image: url("../image/baru8.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto5 {
-  background-image: url("../image/9.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto6 {
-  background-image: url("../image/6.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto7 {
-  background-image: url("../image/baru6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto8 {
-  background-image: url("../image/5.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
-.foto9 {
-  background-image: url("../image/7.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
-}
-
 .title-foto {
   font-size: 18pt;
   font-family: "Lato", sans-serif;
@@ -868,4 +878,23 @@ body.preloader-site {
 
   top: 50%;
   width: 100%;
+}
+
+/* Untuk layar kecil seperti smartphone */
+@media only screen and (max-width: 600px) {
+  /* Gaya CSS untuk tampilan pada smartphone */
+}
+
+/* Untuk layar sedang seperti tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Gaya CSS untuk tampilan pada tablet */
+}
+
+/* Untuk layar besar seperti desktop atau laptop */
+@media only screen and (min-width: 1025px) {
+  /* Gaya CSS untuk tampilan pada desktop atau laptop */
+}
+
+.hidden {
+  display: none;
 }

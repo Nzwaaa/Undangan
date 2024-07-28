@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8" />
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +19,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    
+    <!-- Tambahan dari gpt -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
     <script
       src="https://kit.fontawesome.com/2828f7885a.js"
       integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
@@ -79,11 +85,7 @@
                 </a>
               </div>
               
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-sherly-daeng">
-                  Wedding Galery
-                </a>
-              </div>
+              
               <div class="navbar-item">
                 <a class="navbar-item" href="#Konfirmasi">
                   Konfirmasi
@@ -98,15 +100,7 @@
           <div class="container has-text-centered">
             <h1 class="subtitle">Undangan Pernikahan</h1>
             <h2 class="title">Nurul & Angga</h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                Minggu, 15 September 2024
-                </br>
-                Jl. Samarang Kp. Cireungir  RT.005/RW.001
-                </br>
-                Kec Tarogong Kidul, Kota Garut
-              
-            </h4>
+            
 
           </div>
           <!-- Start Countdown -->       
@@ -117,8 +111,8 @@
               <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
               <li class="separator">:</li>
               <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <!-- <li class="separator">:</li> -->
+              <!-- <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li> -->
             </ul>
             <div class="spasi">
             </div>
@@ -132,7 +126,7 @@
               var harih = '09/15/2024 00:00:00';
 
               $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                date: harih, // TODO Date format: 09/15/2024 17:00:00
                 offset: +7, // TODO Your Timezone Offset
                 day: 'Hari',
                 days: 'Hari'
@@ -144,10 +138,15 @@
           <main>
             <center>
               <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+              <!-- Input untuk menampilkan nama tamu -->
+        
+
             <h1>Di tempat</h1>
             <br> 
             <div class="simply-countdown"></div>
-            <a href="#info" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+            <a href="#info" class="btn btn-lg mt-4" onclick="playAudio()">Lihat Undangan</a>
+
+
 
             </br> 
             
@@ -160,6 +159,7 @@
        
 
         <!-- Begin Hero Menu -->
+       
         <div class="hero-foot " >
 
           <div class="hero-foot--wrapper">
@@ -222,14 +222,14 @@
             Nurul Latifah Nurhasanah, S.E
           </div>
           <div class="putri-dari">
-            Putri dari Bapak Ruhana dan Ibu alm Ade Juariah
+            Putri Bungsu dari Bapak Ruhana, S.Ag dan Almh. Ibu Ade Juariah
           </div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
-            Angga Nanana
+            Angga Resmana
           </div>
           <div class="putra-dari">
-            Putra dari Bapak Encang dan Ibu Ani
+            Putra kedua dari Bapak Ruhana dan Ibu Teti Yeti
           </div>
         </div>
         
@@ -265,7 +265,7 @@
               <p class="waktu is-larger has-text-centered">
                 Akad Nikah:
                 <br>
-                <strong>07.00 WIB</strong>
+                <strong>08.00 WIB</strong>
               </p>
             
             </div>
@@ -275,7 +275,7 @@
               <h1 class="waktu is-larger has-text-centered">
                 Resepsi:
                 <br>
-                <strong>10.00  - 15.00 WIB</strong>
+                <strong>11.00  - 14.00 WIB</strong>
               </h1>
               
               
@@ -345,7 +345,7 @@
                 Stay safe & jaga kesehatan ya :)
                 </p>
      
-              <a href="https://api.whatsapp.com/send?phone=6289658591537&text=Halo%20Galih%20dan%20Hanni,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+              <a href="https://api.whatsapp.com/send?phone=6285314001114&text=Halo%20Nurul%20dan%20Suami,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
                 &nbsp;&nbsp;Saya Datang
               </a>
@@ -354,16 +354,43 @@
               <div data-aos="fade-up" data-aos-easing="linear">
                 <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
               </div>
+
+              <section id="gifts" class="gifts">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                      <span>ungkapan tanda kasih</span>
+                      <h2>Kirim Hadiah</h2>
+                      
+                    </div>
+                  </div>
+          
+                  <div class="row justify-content-center text-center">
+                    <div class="col-md-6">
+                      <ul class="list-group">
+                        <br> <li class="list-group-item">
+                           <div class="fw-bold">BCA</div>
+                          4460772791 - NURUL LATIFAH NURHASANAH
+                        </li>
+                      </br>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          
+
+
+
+
               
               <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
                 Kami yang berbahagia,
                 <br>
-                <a class="instagram":" href="https://www.instagram.com/wgalihps_/" target="_blank" alt="Instagram Galih">
-                  <i class="fab fa-instagram"></i> Keluarga
-                </a>
-                &nbsp
-                <a class="instagram" href="https://www.instagram.com/hanyha.hm/" target="_blank" alt="Instagram Hanni">
-                  <i class="fab fa-instagram"></i> Keluarga
+                
+                <a class="instagram" >
+                  <i class="fab fa-instagram"></i> Keluarga kedua mempelai
                 </a>
               </p>
 
@@ -378,6 +405,12 @@
     </div>
     <!-- End Main Content -->
 
+
+    <!-- For Add Music  Start-->
+    <audio autoplay id="myAudio" src="audio/musikk.mp3"></audio>
+
+    <!-- For Add Music ended-->
+
     <!-- Begin Footer -->
     <div class="footer">
       <div class="container">
@@ -386,6 +419,7 @@
       </div>
     </div>
     <!-- End Footer -->
+
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -397,82 +431,20 @@
         easing: "ease-out",
         duration: 800,
       });
+      
+
+      // Musik
+      function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
+
 
     </script>
 
 
-  <script> 
-    import React, { useState, useEffect, useRef, useCallback } from 'react';
-
-import MainLayout from '@components/Layout';
-import Ticket from '@components/Ticket';
-
-import getQueryValue from '@helpers/getQueryValue';
-import useGuestData from '@/hooks/useGuestData';
-import useConfigData from '@/hooks/useConfigData';
-import { styTicket } from '@components/Ticket/styles';
-
-function ETicket({ location }) {
-  const codeEticket = getQueryValue(location, 'code') || '';
-  const nameEticket = getQueryValue(location, 'name') || '';
-  const alreadyChecked = useRef(false);
-
-  const [value, setValue] = useState('');
-  const [selectedGuest, setSelectedGuest] = useState({});
-  const [isShowTicket, setIsShowTicket] = useState(false);
-
-  const { data, loading } = useGuestData();
-  const { data: configData } = useConfigData();
-
-  const handleCheckTicket = useCallback(
-    (tempValue) => {
-      const guestCode = (tempValue || value).toUpperCase();
-      const guest = data.find((g) => (g.code || '').toUpperCase() === guestCode);
-
-      if (guest) {
-        if (guest.name.toUpperCase().includes(nameEticket.toUpperCase())) {
-          setSelectedGuest(guest);
-          setIsShowTicket(true);
-          return;
-        }
-      }
-
-      alert(`Maaf, Kode data ${guestCode} tidak ditemukan. Mohon di cek lagi..`);
-      window.location.assign('https://arin.miftahussalam.com/');
-    },
-    [data, nameEticket, value],
-  );
-  /**
-   * Effect to autu-check code ticket
-   */
-  useEffect(() => {
-    if (codeEticket !== '' && data.length > 0 && !alreadyChecked.current) {
-      alreadyChecked.current = true;
-      setValue(codeEticket);
-      setTimeout(() => {
-        handleCheckTicket(codeEticket);
-      }, 1000);
-    }
-  }, [codeEticket, data.length, handleCheckTicket, loading]);
-
-  return (
-    <MainLayout>
-      <div css={styTicket}>
-        <div className="homepage">
-          {isShowTicket ? (
-            <Ticket guest={selectedGuest} configData={configData} />
-          ) : (
-            <h3 style={{ fontSize: '1.7rem' }}>🧑‍💻Validasi data tamu.. Mohon tunggu..</h3>
-          )}
-        </div>
-      </div>
-    </MainLayout>
-  );
-}
-
-export default ETicket;
-  </script>
 
 
   </body>
 </html>
+
