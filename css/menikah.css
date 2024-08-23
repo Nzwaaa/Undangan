@@ -71,8 +71,16 @@ html {
 }
 
 /* buat jam */
+#hitungmundur {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Center-aligns items horizontally */
+}
+
 #hitungmundur li {
-  display: inline-block;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
   padding: 10px;
   border: 2px solid #bc8887; /* Adjust the color as needed */
   margin: 5px;
@@ -98,8 +106,7 @@ html {
   margin: 0;
   font-size: 1em;
 }
-
-/* akhiran jam */
+/* jam akhir */
 
 /* Undangan */
 
@@ -203,7 +210,7 @@ margin-bottom: 500px; /* Atur margin bawah */
   top: 10%; /* Sesuaikan dengan posisi yang diinginkan */
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 12px;
+  margin-top: 0;
   color: black;
   font-size: 1.3rem;
   font-weight: bold;
