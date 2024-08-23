@@ -81,9 +81,9 @@ html {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
-  padding: 10px;
+  padding: 5px;
   border: 2px solid #bc8887; /* Adjust the color as needed */
-  margin: 5px;
+  margin-top: 170px;
   border-radius: 5px; /* Optional: adds rounded corners */
   background-color: transparent; /* Optional: adds a background color */
   text-align: center;
@@ -94,6 +94,7 @@ html {
   border: none;
   padding: 0;
   margin: 0 5px;
+  margin-top: 170px;
   background-color: transparent;
 }
 
@@ -156,7 +157,7 @@ margin-bottom: 500px; /* Atur margin bawah */
   display: flex;
   flex-direction: column;
   align-items: center; /* Mengatur semua elemen ke tengah */
-  margin-top: 700px; /* Atur jarak dari atas halaman */
+  margin-top: 500vw; /* Atur jarak dari atas halaman */
 }
 
 /* Buat jamnya */
