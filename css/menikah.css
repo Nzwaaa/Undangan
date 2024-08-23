@@ -73,31 +73,34 @@ html {
 /* buat jam */
 #hitungmundur {
   display: flex;
-  align-items: center; /* Aligns items vertically in the center */
-  justify-content: center; /* Center-aligns items horizontally */
+  align-items: center; /* Sejajarkan elemen secara vertikal */
+  justify-content: center; /* Pusatkan elemen secara horizontal */
+  padding: 10px; /* Tambahkan padding untuk memberi ruang di sekitar elemen */
 }
 
 #hitungmundur li {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
   padding: 5px;
-  border: 2px solid #bc8887; /* Adjust the color as needed */
-  margin-top: 300px;
-  border-radius: 5px; /* Optional: adds rounded corners */
-  background-color: transparent; /* Optional: adds a background color */
+  border: 2px solid #bc8887;
+  margin: 0 5px; /* Kurangi margin jika diperlukan */
+  border-radius: 5px;
+  background-color: transparent;
   text-align: center;
-  width: 60px; /* Adjust the width as needed */
+  width: 60px;
 }
 
 #hitungmundur .separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   padding: 0;
-  margin: 0 5px;
-  margin-top: 300px;
+  margin: 0 5px; /* Sesuaikan margin agar seimbang dengan item */
   background-color: transparent;
+  width: 20px; /* Atur lebar jika diperlukan */
 }
-
 #hitungmundur span {
   font-size: 2em;
   display: block;
