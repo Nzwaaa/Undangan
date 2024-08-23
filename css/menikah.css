@@ -925,3 +925,16 @@ body.preloader-site {
 .hidden {
   display: none;
 }
+
+/* Reset dasar untuk memastikan elemen memenuhi seluruh layar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Atur tampilan body untuk menyesuaikan seluruh layar */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Menghindari scroll horizontal */
+}
