@@ -104,32 +104,33 @@ html {
 /* Undangan */
 
 .hero {
-  /* background-image: url(page1.jpeg); */
-  /* background-image: url(https://picsum.photos/id/25/1920/1080); */
   background: linear-gradient(rgb(247 146 143 / 32%), #c9d9e800),
     rgb(216, 228, 240) url(../image/animasi.png) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  color: black; /*buat jam
-  /* box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); */
+  background-position: center center;
+  color: black;
   font-family: "Raleway", sans-serif;
+  min-height: 100vh; /* Ensures the hero section covers the full viewport height */
 }
 
 .hero2 {
-  /* background-image: url(https://picsum.photos/id/25/1920/1080); */
   background: linear-gradient(rgb(0 0 0 / 28%), #e2ccd02e),
-    rgb(61 76 90) url(../image/2.jpg) no-repeat;
+    rgb(61 76 90) url(../image/2.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   color: black;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
+  min-height: 100vh; /* Ensures the hero section covers the full viewport height */
 }
 
 .hero .title {
   font-family: "Rouge Script", sans-serif;
   font-weight: 700;
-  transform: rotate(-2deg);
+  transform: none;
+
   font-size: 5rem;
   padding-bottom: 5px;
   color: whitesmoke;
@@ -196,7 +197,11 @@ margin-bottom: 500px; /* Atur margin bawah */
 }
 
 .hero .subtitle {
-  padding: 35px;
+  position: fixed; /* Mengunci posisi */
+  top: 10%; /* Sesuaikan dengan posisi yang diinginkan */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
   color: black;
   font-size: 1.3rem;
   font-weight: bold;
@@ -217,6 +222,19 @@ margin-bottom: 500px; /* Atur margin bawah */
 @media (max-width: 599px) {
   .hero .hero-foot {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-body .title {
+    font-size: 1.5rem; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .hero2 {
+    background-attachment: scroll; /* Ensures smoother scrolling on mobile devices */
   }
 }
 
